@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Movie Search Results :</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-item *ngFor="let movie of data">
+    <ion-avatar slot="start">
+        <img data-src="http://image.tmdb.org/t/p/w185/{{ movie.poster_path }}"> 
+    </ion-avatar>
+  
+  
+  <ion-label padding><p>{{movie.original_title}}</p></ion-label>
+  </ion-item>
+</ion-content>

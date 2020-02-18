@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Search a Movie type</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <div id="container">
+    <ion-input id="movieTypeSearch" type="text" required [(ngModel)]="movieType" 
+    placeholder="Enter a movie type to search"></ion-input>
+  <ion-button color="secondary" type="button" (click)=showMovieList()>Search</ion-button>
+  </div>
+</ion-content>
